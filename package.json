@@ -1,0 +1,11 @@
+{
+  "name": "yol-uzbekistan-travel-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "O‘zbek tilidagi interaktiv sayohat atlasi — kutubxonasiz, offline-first web ilova.",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 0.0.0.0",
+    "test": "node --test"
+  }
+}

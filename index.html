@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="uz" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta name="description" content="O‘zbekistonning qadimiy shaharlari, hunarmandchiligi va keng tabiatini kashf eting. Kayfiyatingizga mos yo‘nalish toping va o‘z safar rejangizni tuzing." />
+    <meta name="application-name" content="Yo‘l" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <title>Yo‘l — O‘zbekistonni shoshilmay kashf eting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+    <script>
+      try { document.documentElement.dataset.theme = localStorage.getItem("yol-theme") || "light"; } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-compass" viewBox="0 0 32 32"><path d="M16 2.5 19 12l9.5 4-9.5 3L16 28.5 13 19l-9.5-3 9.5-4L16 2.5Z" fill="currentColor"/><circle cx="16" cy="16" r="2.2" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4.5 12h14m-5.5-5.5L18.5 12 13 17.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
+      <symbol id="icon-north" viewBox="0 0 24 24"><path d="m12 3 4.2 9L12 10.4 7.8 12 12 3Zm0 7.4v10.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M19.6 15.1A8.2 8.2 0 0 1 8.9 4.4 8.3 8.3 0 1 0 19.6 15Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="2.7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="2.7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m8.5 10.7 7-4.1m-7 6.7 7 4.1" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19.5 6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Asosiy mazmunga o‘tish</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Yo‘l — bosh sahifa">
+          <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-compass"></use></svg></span>
+          <span class="brand-word">yo‘l<span class="brand-period">.</span></span>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-caption">O‘ZBEKISTON<br />SAYOHAT ATLASI</span>
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Asosiy navigatsiya">
+          <a href="#manzillar">Manzillar</a>
+          <a href="#xarita">Xarita</a>
+          <a href="#kayfiyat">Kayfiyatingiz</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Tungi ko‘rinishga o‘tish" title="Ko‘rinishni almashtirish">
+            <svg class="theme-icon-moon" aria-hidden="true"><use href="#icon-moon"></use></svg>
+            <svg class="theme-icon-sun" aria-hidden="true"><use href="#icon-sun"></use></svg>
+          </button>
+          <button class="plan-shortcut" type="button" data-scroll="reja">
+            <span>Safar rejam</span>
+            <span class="plan-count" id="header-count">0</span>
+          </button>
+          <button class="icon-button mobile-menu-toggle" id="menu-toggle" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="main-nav">
+            <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> MARKAZIY OSIYO · 41° N 64° E</div>
+          <h1 id="hero-title">Har bir yo‘l —<br /><em>yangi</em> bir hikoya.</h1>
+          <p class="hero-lede">Moviy gumbazlar, jimjit tog‘lar, tonggi bozorlar. O‘zbekistonni shoshilmay kashf eting — navbatdagi manzilingiz allaqachon sizni kutyapti.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#manzillar">Sayohatni boshlash <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+            <button class="text-button surprise-trigger" type="button"><span class="sparkle" aria-hidden="true">✳</span> Meni hayron qoldir</button>
+          </div>
+          <div class="hero-footnote"><span class="footnote-stamp"><svg aria-hidden="true"><use href="#icon-north"></use></svg></span><span>8 manzil · 6 xil kayfiyat<br /><strong>Safar esa — sizniki.</strong></span></div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/registan.jpg" alt="Kechki osmon ostida yoritilgan Registon maydoni" fetchpriority="high" />
+          <div class="hero-image-shade"></div>
+          <div class="hero-image-topline"><span>01 — 08</span><span>IPAK YO‘LI IZIDAN</span></div>
+          <div class="hero-photo-caption">
+            <div><span class="caption-kicker">BIRINCHI TO‘XTASH</span><h2>Samarqand</h2></div>
+            <button class="round-arrow" type="button" data-open-destination="samarkand" aria-label="Samarqand haqida batafsil"><svg aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <div class="hero-seal" aria-hidden="true"><span>YO‘L</span><svg><use href="#icon-compass"></use></svg><small>TOPING · HIS QILING</small></div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="O‘zbekiston manzillari">
+        <div class="ticker-track" aria-hidden="true">
+          <span>SAMARQAND</span><i>✳</i><span>BUXORO</span><i>✳</i><span>XIVA</span><i>✳</i><span>CHIMYON</span><i>✳</i><span>FARG‘ONA</span><i>✳</i><span>OROLBO‘YI</span><i>✳</i><span>AYDARKO‘L</span><i>✳</i><span>TOSHKENT</span><i>✳</i>
+          <span>SAMARQAND</span><i>✳</i><span>BUXORO</span><i>✳</i><span>XIVA</span><i>✳</i><span>CHIMYON</span><i>✳</i><span>FARG‘ONA</span><i>✳</i><span>OROLBO‘YI</span><i>✳</i><span>AYDARKO‘L</span><i>✳</i><span>TOSHKENT</span><i>✳</i>
+        </div>
+      </div>
+
+      <section class="mood-section section-pad" id="kayfiyat" aria-labelledby="mood-title">
+        <div class="page-width mood-layout">
+          <div class="mood-copy">
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YO‘LNI HISDAN BOSHLANG</div>
+            <h2 class="section-title section-title-light" id="mood-title">Bu safar<br /><em>nimani</em> izlayapsiz?</h2>
+            <p class="mood-intro">Aniq reja shart emas. Kayfiyatingizni tanlang — sizga mos manzilni biz topamiz.</p>
+            <div class="mood-options" id="mood-options" role="group" aria-label="Sayohat kayfiyati"></div>
+            <p class="mood-hint"><span aria-hidden="true">↳</span> Tanlovingiz xohlagan payt o‘zgaradi.</p>
+          </div>
+          <div class="mood-result-wrap">
+            <div class="mood-result" id="mood-result" aria-live="polite"></div>
+            <div class="mood-quote"><span aria-hidden="true">“</span><p>Yo‘lga chiqqan odamning ko‘ngli kengayadi.</p><small>O‘ZBEK XALQ MAQOLI</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations-section section-pad page-width" id="manzillar" aria-labelledby="destinations-title">
+        <div class="section-heading-row">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> O‘ZINGIZGA MOSINI TANLANG</div>
+            <h2 class="section-title" id="destinations-title">Bir yurt.<br /><em>Sakkiz xil</em> olam.</h2>
+          </div>
+          <p class="section-aside">Har manzilning o‘z ohangi bor.<br />Sizga qaysi biri yaqin?</p>
+        </div>
+
+        <div class="destination-tools">
+          <div class="filter-list" id="filter-list" role="group" aria-label="Manzillarni tur bo‘yicha saralash"></div>
+          <label class="search-box">
+            <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+            <span class="visually-hidden">Manzil qidirish</span>
+            <input id="destination-search" type="search" placeholder="Manzil qidiring…" autocomplete="off" />
+            <kbd>⌘ K</kbd>
+          </label>
+        </div>
+        <div class="result-line"><span id="result-count">8 manzil</span><span>SEKIN KO‘RING. YAXSHIROQ ESLAB QOLING.</span></div>
+        <div class="destination-grid" id="destination-grid" aria-live="polite"></div>
+        <div class="empty-results" id="empty-results" hidden>
+          <span class="empty-icon">⌕</span><h3>Bu iz hozircha topilmadi.</h3><p>Boshqa so‘z yoki yo‘nalish turini sinab ko‘ring.</p><button type="button" class="text-button" id="clear-search">Barcha manzillarni ko‘rsatish <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
+        </div>
+      </section>
+
+      <section class="atlas-section section-pad" id="xarita" aria-labelledby="atlas-title">
+        <div class="page-width">
+          <div class="section-heading-row atlas-heading">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-line"></span> YO‘NALISH SIZDAN BOSHLANADI</div>
+              <h2 class="section-title" id="atlas-title">Xaritada ko‘ring.<br /><em>O‘zingizniki</em> qiling.</h2>
+            </div>
+            <p class="section-aside">Nuqtani bosing — manzilni tanishing.<br />Rejangizga qo‘shing — yo‘lingizni chizing.</p>
+          </div>
+
+          <div class="atlas-grid">
+            <article class="map-panel" aria-label="O‘zbekistonning sxematik sayohat xaritasi">
+              <div class="map-panel-top"><div><span class="panel-overline">SAYOHAT ATLASI · 01</span><h3>Manzillar xaritasi</h3></div><span class="map-compass" aria-hidden="true"><svg><use href="#icon-north"></use></svg><small>SH</small></span></div>
+              <div class="map-canvas" id="map-canvas">
+                <svg class="map-art" viewBox="0 0 1000 640" preserveAspectRatio="none" role="img" aria-label="O‘zbekistonning taxminiy konturi va sayohat yo‘nalishi">
+                  <defs>
+                    <pattern id="map-dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="currentColor" opacity=".12" /></pattern>
+                    <filter id="map-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                  </defs>
+                  <path class="country-shadow" d="M92 283 130 268 148 248 184 256 207 238 236 249 258 233 281 248 307 237 335 251 359 243 384 258 411 244 437 260 462 248 490 264 519 251 543 268 570 256 596 274 626 267 650 286 679 278 704 297 733 290 759 309 789 303 814 323 846 316 870 332 901 330 923 349 908 367 880 372 860 387 842 386 830 408 806 410 797 433 772 437 761 458 735 461 722 482 699 478 678 493 655 487 633 500 612 491 590 501 568 490 545 500 525 486 501 493 480 478 457 485 438 469 416 475 397 459 376 466 356 450 335 456 316 440 294 445 275 429 251 434 235 416 212 422 193 404 171 411 157 390 137 395 126 375 105 379 95 361 76 362 69 345 80 329 68 315 84 302Z" />
+                  <path class="country-shape" d="M92 283 130 268 148 248 184 256 207 238 236 249 258 233 281 248 307 237 335 251 359 243 384 258 411 244 437 260 462 248 490 264 519 251 543 268 570 256 596 274 626 267 650 286 679 278 704 297 733 290 759 309 789 303 814 323 846 316 870 332 901 330 923 349 908 367 880 372 860 387 842 386 830 408 806 410 797 433 772 437 761 458 735 461 722 482 699 478 678 493 655 487 633 500 612 491 590 501 568 490 545 500 525 486 501 493 480 478 457 485 438 469 416 475 397 459 376 466 356 450 335 456 316 440 294 445 275 429 251 434 235 416 212 422 193 404 171 411 157 390 137 395 126 375 105 379 95 361 76 362 69 345 80 329 68 315 84 302Z" />
+                  <path class="country-pattern" d="M92 283 130 268 148 248 184 256 207 238 236 249 258 233 281 248 307 237 335 251 359 243 384 258 411 244 437 260 462 248 490 264 519 251 543 268 570 256 596 274 626 267 650 286 679 278 704 297 733 290 759 309 789 303 814 323 846 316 870 332 901 330 923 349 908 367 880 372 860 387 842 386 830 408 806 410 797 433 772 437 761 458 735 461 722 482 699 478 678 493 655 487 633 500 612 491 590 501 568 490 545 500 525 486 501 493 480 478 457 485 438 469 416 475 397 459 376 466 356 450 335 456 316 440 294 445 275 429 251 434 235 416 212 422 193 404 171 411 157 390 137 395 126 375 105 379 95 361 76 362 69 345 80 329 68 315 84 302Z" />
+                  <path class="map-route map-route-suggested" d="M756 333 C705 350 636 394 575 412 S493 421 455 420 S347 419 275 428" />
+                  <path class="map-route map-route-selected" id="map-route-selected" d="" />
+                  <text class="map-water-label" x="116" y="220">OROL DENGIZI</text>
+                  <text class="map-water-label" x="818" y="520">FARG‘ONA VODIYSI</text>
+                  <text class="map-water-label" x="380" y="554">QIZILQUM</text>
+                  <text class="map-note" x="725" y="226">TOG‘LAR</text>
+                </svg>
+                <div class="map-pins" id="map-pins"></div>
+                <div class="map-instruction"><span class="pulse-dot"></span> Nuqtani bosing</div>
+              </div>
+              <div class="map-legend"><span><i class="legend-dot legend-dot--place"></i> Sayohat manzili</span><span><i class="legend-line"></i> Taklif etilgan yo‘l</span><small>Sxematik xarita · joylashuvlar taxminiy</small></div>
+            </article>
+
+            <aside class="planner-panel" id="reja" aria-labelledby="planner-title">
+              <div class="planner-topline"><span>SHAXSIY SAYOHAT DAFTARI</span><span class="planner-stamp"><svg aria-hidden="true"><use href="#icon-compass"></use></svg></span></div>
+              <h3 id="planner-title" tabindex="-1">Yo‘lingizni<br /><em>o‘zingiz</em> chizing.</h3>
+              <p class="planner-description">Yoqqan manzillarni qo‘shing. Reja shu qurilmada saqlanadi — qachon xohlasangiz, qaytib keling.</p>
+              <div class="planner-summary" id="planner-summary"><span>0 <small>MANZIL</small></span><i></i><span>0 <small>KUN · TAVSIYA</small></span></div>
+              <div class="planner-stops" id="planner-stops" aria-live="polite"></div>
+              <div class="planner-empty" id="planner-empty"><span class="planner-empty-icon">↗</span><p>Bu sahifa hali bo‘sh.<br /><strong>Bir manzil qo‘shing — yo‘l boshlansin.</strong></p></div>
+              <div class="planner-actions">
+                <button class="button button-light" id="share-plan" type="button" disabled><svg aria-hidden="true"><use href="#icon-share"></use></svg> Rejani ulashish</button>
+                <button class="planner-clear" id="clear-plan" type="button" disabled>Tozalash</button>
+              </div>
+              <p class="planner-note" id="planner-note">Rejangiz faqat shu brauzerda saqlanadi.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section page-width" aria-labelledby="closing-title">
+        <div class="closing-stamp" aria-hidden="true"><svg><use href="#icon-compass"></use></svg></div>
+        <div class="closing-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> KEYINGI HIKOYA — SIZNIKI</div><h2 id="closing-title">Yo‘lga chiqishga<br /><em>tayyormisiz?</em></h2><p>Eng yaxshi reja — sizni eshikdan olib chiqqan reja.</p></div>
+        <div class="closing-actions"><a class="button button-paper" href="#manzillar">Manzillarni ko‘rish <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a><button class="closing-random surprise-trigger" type="button">Yoki tasodifga ishoning <span aria-hidden="true">↗</span></button></div>
+        <div class="closing-index" aria-hidden="true">YO‘L<br />TOPILADI.</div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width">
+      <a class="brand footer-brand" href="#top" aria-label="Yo‘l — sahifa boshiga">
+        <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-compass"></use></svg></span><span class="brand-word">yo‘l<span class="brand-period">.</span></span>
+      </a>
+      <p>Qiziqqan ko‘ngillar uchun, mehr bilan.</p>
+      <div class="footer-right"><span>O‘ZBEKISTON · 2026</span><a href="#top" class="back-to-top">YUQORIGA ↑</a></div>
+    </footer>
+    <p class="disclaimer page-width">Sayohat uchun ilhom va umumiy ma’lumot. Kirish tartibi, transport, ob-havo hamda mahalliy sharoitni yo‘lga chiqishdan oldin tekshiring.</p>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="modal" id="detail-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title" aria-describedby="detail-story">
+        <button class="modal-close" type="button" aria-label="Oynani yopish" data-close-modal><svg aria-hidden="true"><use href="#icon-close"></use></svg></button>
+        <div class="detail-content" id="detail-content"></div>
+      </section>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

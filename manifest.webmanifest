@@ -1,0 +1,19 @@
+{
+  "name": "Yo‘l — O‘zbekiston sayohat atlasi",
+  "short_name": "Yo‘l",
+  "description": "O‘zbekistonni shoshilmay kashf eting. Kayfiyatingizga mos manzil toping va o‘z safar rejangizni tuzing.",
+  "lang": "uz-UZ",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f1e8",
+  "theme_color": "#f4f1e8",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
